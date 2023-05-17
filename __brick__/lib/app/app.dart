@@ -1,5 +1,6 @@
-import 'package:{{name.snakeCase()}}/app/routes.dart';
-import 'package:{{name.snakeCase()}}/bloc/user_settings/user_setting_bloc.dart';
+import 'package:{{name.snakeCase()}}/app/bloc/user_settings/user_setting_bloc.dart';
+import 'package:{{name.snakeCase()}}/app/route/routes.dart';
+import 'package:{{name.snakeCase()}}/app/theme/color_schemes.g.dart';
 import 'package:{{name.snakeCase()}}/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,8 +8,6 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_it/get_it.dart';
-
-import 'color_schemes.g.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

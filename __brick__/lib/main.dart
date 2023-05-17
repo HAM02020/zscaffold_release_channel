@@ -1,9 +1,10 @@
 import 'dart:async';
 
 import 'package:{{name.snakeCase()}}/app/app.dart';
-import 'package:{{name.snakeCase()}}/app/app_bloc_oberver.dart';
-import 'package:{{name.snakeCase()}}/bloc/counter/counter_bloc.dart';
-import 'package:{{name.snakeCase()}}/bloc/user_settings/user_setting_bloc.dart';
+import 'package:{{name.snakeCase()}}/app/bloc/app_bloc_oberver.dart';
+import 'package:{{name.snakeCase()}}/app/bloc/user_settings/user_setting_bloc.dart';
+import 'package:{{name.snakeCase()}}/pages/demo/bloc/counter_bloc.dart';
+
 import 'package:{{name.snakeCase()}}/utils/log/log.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';

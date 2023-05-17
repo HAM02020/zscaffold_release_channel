@@ -23,7 +23,7 @@ touch mason.yaml
 bricks:
   flutter_template_mason:
     git:
-      url: "https://github.com/HAM02020/zscaffold_release_channel"
+      url: "https://github.com/HAM02020/flutter_template"
       path: "."
 
 # add brick
