@@ -1,4 +1,4 @@
-import 'package:{{name.snakeCase()}}/utils/log/log.dart';
+import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
