@@ -1,12 +1,11 @@
-import 'package:{{project_name.snakeCase()}}/generated/l10n.dart';
-import 'package:{{project_name.snakeCase()}}/pages/demo/bloc/counter_bloc.dart';
-
-import 'package:{{project_name.snakeCase()}}/pages/demo/demo_page.dart';
-import 'package:{{project_name.snakeCase()}}/pages/permission/permission_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get_it/get_it.dart';
+import 'package:{{project_name.snakeCase()}}/generated/l10n.dart';
+import 'package:{{project_name.snakeCase()}}/pages/demo/bloc/counter_bloc.dart';
+import 'package:{{project_name.snakeCase()}}/pages/demo/demo_page.dart';
+import 'package:{{project_name.snakeCase()}}/pages/permission/permission_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -31,26 +30,26 @@ class _MyHomePageState extends State<MyHomePage> {
           items: [
             BottomNavigationBarItem(
                 icon: const FaIcon(FontAwesomeIcons.brush),
-                label: S.of(context).demo),
+                label: L10N.of(context).demo),
             BottomNavigationBarItem(
                 icon: const FaIcon(FontAwesomeIcons.server),
-                label: S.of(context).server),
+                label: L10N.of(context).server),
             BottomNavigationBarItem(
                 icon: const FaIcon(FontAwesomeIcons.landmark),
-                label: S.of(context).blog),
+                label: L10N.of(context).blog),
           ]),
       drawer: Drawer(
         child: SafeArea(
           child: Column(children: [
             ListTile(
               leading: const FaIcon(FontAwesomeIcons.affiliatetheme),
-              title: Text(S.of(context).listTile),
+              title: Text(L10N.of(context).listTile),
             ),
           ]),
         ),
       ),
       appBar: AppBar(
-        title: Text(S.of(context).helloworld),
+        title: Text(L10N.of(context).helloworld),
       ),
       body: IndexedStack(
         index: _index,

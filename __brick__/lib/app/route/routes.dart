@@ -1,7 +1,7 @@
-import 'package:{{project_name.snakeCase()}}/pages/home.dart';
-import 'package:{{project_name.snakeCase()}}/pages/second/second.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:{{project_name.snakeCase()}}/pages/home.dart';
+import 'package:{{project_name.snakeCase()}}/pages/second/second.dart';
 
 class Routes {
   static FluroRouter router = FluroRouter();

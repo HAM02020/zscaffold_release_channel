@@ -1,5 +1,5 @@
-import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 
 /// {@template app_bloc_observer}
 /// Custom [BlocObserver] that observes all bloc and cubit state changes.

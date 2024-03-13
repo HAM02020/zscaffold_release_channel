@@ -1,16 +1,14 @@
 import 'dart:math';
 
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get_it/get_it.dart';
 import 'package:{{project_name.snakeCase()}}/app/application.dart';
 import 'package:{{project_name.snakeCase()}}/app/bloc/user_settings/user_setting_bloc.dart';
 import 'package:{{project_name.snakeCase()}}/app/route/routes.dart';
-
 import 'package:{{project_name.snakeCase()}}/generated/l10n.dart';
 import 'package:{{project_name.snakeCase()}}/pages/demo/bloc/counter_bloc.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:get_it/get_it.dart';
 
 class DemoPage extends StatelessWidget {
   const DemoPage({super.key});
@@ -40,7 +38,7 @@ class DemoPage extends StatelessWidget {
     return FloatingActionButton.extended(
       heroTag: "toSecondPage",
       onPressed: () => Application.router.navigateTo(context, Routes.second),
-      label: Text(S.of(context).toSecondPage),
+      label: Text(L10N.of(context).toSecondPage),
     );
   }
 
@@ -57,7 +55,7 @@ class DemoPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                S.of(context).countTimes,
+                L10N.of(context).countTimes,
               ),
               const SizedBox(
                 width: 10,
@@ -107,7 +105,7 @@ class DemoPage extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            Text(S.of(context).changeLocale)
+            Text(L10N.of(context).changeLocale)
           ],
         ),
         Row(
@@ -115,7 +113,7 @@ class DemoPage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text(S.of(context).Chinese),
+                Text(L10N.of(context).Chinese),
                 Radio(
                   value: UserLocaleMode.zh,
                   groupValue: userSettingCubit.state.localMode,
@@ -125,7 +123,7 @@ class DemoPage extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(S.of(context).English),
+                Text(L10N.of(context).English),
                 Radio(
                   value: UserLocaleMode.en,
                   groupValue: userSettingCubit.state.localMode,
@@ -135,7 +133,7 @@ class DemoPage extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(S.of(context).system),
+                Text(L10N.of(context).system),
                 Radio(
                   value: UserLocaleMode.system,
                   groupValue: userSettingCubit.state.localMode,
@@ -161,7 +159,7 @@ class DemoPage extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            Text(S.of(context).changeThemeMode),
+            Text(L10N.of(context).changeThemeMode),
           ],
         ),
         Row(
@@ -170,7 +168,7 @@ class DemoPage extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text(S.of(context).lightMode),
+                Text(L10N.of(context).lightMode),
                 Radio(
                   value: ThemeMode.light,
                   groupValue: userSettingCubit.state.themeMode,
@@ -180,7 +178,7 @@ class DemoPage extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(S.of(context).darkMode),
+                Text(L10N.of(context).darkMode),
                 Radio(
                   value: ThemeMode.dark,
                   groupValue: userSettingCubit.state.themeMode,
@@ -192,7 +190,7 @@ class DemoPage extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(S.of(context).system),
+                Text(L10N.of(context).system),
                 Radio(
                   value: ThemeMode.system,
                   groupValue: userSettingCubit.state.themeMode,
