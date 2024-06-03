@@ -72,7 +72,7 @@ class AppView extends StatelessWidget {
             L10N.delegate,
           ],
           supportedLocales: L10N.delegate.supportedLocales,
-          locale: state.locale,
+          locale: context.read<UserSettingCubit>().locale,
           navigatorObservers: [FlutterSmartDialog.observer],
           builder: FlutterSmartDialog.init(),
         );

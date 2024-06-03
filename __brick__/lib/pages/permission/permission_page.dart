@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 
@@ -11,8 +10,6 @@ class PermissionPage extends StatefulWidget {
 }
 
 class _PermissionPageState extends State<PermissionPage> {
-  final MethodChannel platform = const MethodChannel('ZKPermission');
-
   @override
   void initState() {
     super.initState();
@@ -74,11 +71,7 @@ class _PermissionPageState extends State<PermissionPage> {
             child: const Text("获取通知权限"),
           ),
           ElevatedButton(
-            onPressed: () async {
-              final res =
-                  await platform.invokeMethod('ZKLocalNetworkAuthorization');
-              zkLogger.d(res);
-            },
+            onPressed: () async {},
             child: const Text("获取本地网络权限"),
           )
         ]),

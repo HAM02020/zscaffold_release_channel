@@ -8,13 +8,20 @@
  
  
 */
-"NSCameraUsageDescription" = "当前需要拍照来编辑功能，您是否允许打开相机？";
+"NSBluetoothAlwaysUsageDescription" = "The app requires your permission to connect to Bluetooth devices";
+"NSBluetoothPeripheralUsageDescription" = "The app requires your permission to connect to a Bluetooth device";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "The current feature requires access to your location, do you allow targeting to be turned on?";
+"NSLocationWhenInUseUsageDescription" = "The current feature requires access to your location, do you allow targeting to be turned on?";
+"NSLocationAlwaysUsageDescription" = "The current feature requires access to your location, do you allow targeting to be turned on?";
 
-"NSMicrophoneUsageDescription" = "当前需要录音权限，您是否允许？";
+"NSCameraUsageDescription" = "The app requires your permission to scan the QR code to connect to the device";
+"NSMicrophoneUsageDescription" = "The App requires your permission to record audio";
 
-"NSPhotoLibraryAddUsageDescription" = "当前需要保存图片至相册，您是否允许?";
+"NSPhotoLibraryUsageDescription" = "Apps require your consent to use your media to select multimedia files";
+"NSPhotoLibraryAddUsageDescription" = "Apps require your consent to use your media to select multimedia files";
 
-"NSPhotoLibraryUsageDescription"="当前功能需要访问您的相册来编辑功能，您是否允许打开相册？";
-
-"NSLocationAlwaysAndWhenInUseUsageDescription"="当前功能需要访问您的定位，您是否允许打开定位？";
-
+"NSCalendarsUsageDescription" = "Do you want to allow this app to use the calendar?";
+"NSContactsUsageDescription" = "Do you want to allow this app to access your address book?";
+"NSAppleMusicUsageDescription" = "The app requires your consent to access the media library";
+"NSMotionUsageDescription" = "App requires your consent to access sports and fitness";
+"NSSpeechRecognitionUsageDescription" = "Do you want to allow this app to use speech recognition?";

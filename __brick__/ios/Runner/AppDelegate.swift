@@ -8,9 +8,6 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-      
-      let flutterVC = window.rootViewController as! FlutterViewController
-      let mc = ZKPermissionMC(flutterVC)
       GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }

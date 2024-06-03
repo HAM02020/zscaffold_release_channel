@@ -8,12 +8,20 @@
  
  
 */
-"NSCameraUsageDescription" ="当前需要拍照来编辑功能，您是否允许打开相机？";
+"NSBluetoothAlwaysUsageDescription" = "App需要您的同意，才能连接蓝牙设备";
+"NSBluetoothPeripheralUsageDescription" = "App需要您的同意，才能连接蓝牙设备";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "当前功能需要访问您的定位，您是否允许打开定位？";
+"NSLocationWhenInUseUsageDescription" = "当前功能需要访问您的定位，您是否允许打开定位？";
+"NSLocationAlwaysUsageDescription" = "当前功能需要访问您的定位，您是否允许打开定位？";
 
-"NSMicrophoneUsageDescription" = "当前需要录音权限，您是否允许？";
+"NSCameraUsageDescription" = "App需要您的同意，才能扫码连接设备";
+"NSMicrophoneUsageDescription" = "App需要您的同意，才能录制语音";
 
-"NSPhotoLibraryAddUsageDescription" = "当前需要保存图片至相册，您是否允许?";
+"NSPhotoLibraryUsageDescription" = "App需要您的同意，才能使用您的媒体资料来选取多媒体文件";
+"NSPhotoLibraryAddUsageDescription" = "App需要您的同意，才能使用您的媒体资料来选取多媒体文件";
 
-"NSPhotoLibraryUsageDescription"="当前功能需要访问您的相册来编辑功能，您是否允许打开相册？";
-
-"NSLocationAlwaysAndWhenInUseUsageDescription"="当前功能需要访问您的定位，您是否允许打开定位？";
+"NSCalendarsUsageDescription" = "是否允许此APP使用日历？";
+"NSContactsUsageDescription" = "是否允许此APP访问您的通讯录？";
+"NSAppleMusicUsageDescription" = "App需要您的同意,才能访问媒体资料库";
+"NSMotionUsageDescription" = "App需要您的同意,才能访问运动与健身";
+"NSSpeechRecognitionUsageDescription" = "是否允许此App使用语音识别？";

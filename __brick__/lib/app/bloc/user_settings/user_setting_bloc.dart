@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:{{project_name.snakeCase()}}/generated/l10n.dart';
+import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
-import 'package:{{project_name.snakeCase()}}/generated/l10n.dart';
-import 'package:{{project_name.snakeCase()}}/utils/log/log.dart';
 
 part 'user_setting_state.dart';
 
@@ -66,7 +66,9 @@ class UserSettingCubit extends Cubit<UserSettingState> with HydratedMixin {
     }
   }
 
-  void setPrimaryColor(Color? color) {}
+  void setPrimaryColor(Color? color) {
+    emit(state.copyWith(primary: () => color));
+  }
 
   void _shouldChangePlatformBrightness() {
     if (state.themeMode != ThemeMode.system) {
